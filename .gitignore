@@ -1,3 +1,4 @@
 *.csv
 *.Rdata
 *.sas7bdat
+data/raw/*
