@@ -32,7 +32,7 @@ data derv.&job._&sysdate.;
 	format _all_;
 
 	* keep the variables;
-	keep psu stratum wmweight alive child_sex;
+	keep psu stratum wmweight alive child_sex ethnicity;
 
 	* rename variables;
 	rename stratum = strata;
@@ -44,14 +44,14 @@ data derv.&job._&sysdate.;
 	child_sex = (bh3 = 1);
 	label child_sex = "Child's sex"; 
 
-	
+	label ethnicity = "Ethnicity"
 run;
 
 proc surveyfreq data = derv.&job._&sysdate.;
 	cluster psu;
 	strata strata;
 	weight wmweight;
-	table alive * child_sex  / chisq;
+	table alive * child_sex alive * ethnicity / chisq;
 	format child_sex child_sex_fmt.;
 run;
 
