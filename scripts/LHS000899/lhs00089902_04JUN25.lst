@@ -1,0 +1,573 @@
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   1
+
+                     Variable                                                                          Percent
+                     Name            Variable Label                                                    Missing
+
+                     caretakerdis    Dificultades funcionales (18-49 años)                               0.00 
+                     CDOI            Fecha de entrevista de niños (CMC)                                  0.00 
+                     chweight        Pesos muestral de los menores de 5 años                             0.00 
+                     ethnicity       Etnia del jefe de hogar                                             0.00 
+                     HH1             Número de conglomerado                                              0.00 
+                     HH2             Número de hogar                                                     0.00 
+                     HH4             Número del supervisora                                              0.00 
+                     HH6             Area                                                                0.00 
+                     HH7             Región/Departamento                                                 0.00 
+                     HH7_A           Región/Departamento                                                 0.00 
+                     HL4             Sexo                                                                0.00 
+                     LN              Numero de linea                                                     0.00 
+                     melevel         Educación de la madre                                               0.00 
+                     PSU             Primary sampling unit                                               0.00 
+                     stratum         Estrato                                                             0.00 
+                     UF1             Número de conglomerado                                              0.00 
+                     UF10            Consentimiento                                                      0.00 
+                     UF17            Resultado de la entrevista de niño 5-17                             0.00 
+                     UF2             Número de hogar                                                     0.00 
+                     UF3             Número de línea del niño                                            0.00 
+                     UF4             Número de línea de la madre o cuidador(a)                           0.00 
+                     UF5             Número del entrevistador(a)                                         0.00 
+                     UF6             Número de la supervisora                                            0.00 
+                     UF7D            Día de la entrevista                                                0.00 
+                     UF7M            Mes de la entrevista                                                0.00 
+                     UF7Y            Año de la entrevista                                                0.00 
+                     UF8H            Inicio de la entrevista - Hora                                      0.00 
+                     UF8M            Inicio de la entrevista - Minutos                                   0.00 
+                     UF9             Primera entrevista de este respondente                              0.00 
+                     UFHINT          Entrevistador del hogar                                             0.00 
+                     UFINT           Número del entrevistador del hogar                                  0.00 
+                     windex10        Grupo Percentil de com1                                             0.00 
+                     windex5         Quintiles de índice de riqueza                                      0.00 
+                     wscore          Puntuación de riqueza combinado                                     0.00 
+                     AN1             Número de conglomerado                                              2.83 
+                     AN13D           Día de la medición                                                  2.83 
+                     AN13M           Mes de la medición                                                  2.83 
+                     AN13Y           Año de la medición                                                  2.83 
+                     AN2             Número de hogar                                                     2.83 
+                     AN3             Número de línea del niño(a)                                         2.83 
+                     AN4             Edad del niño(a)                                                    2.83 
+                     AN5             Número de línea de la madre o cuidador                              2.83 
+                     AN6             Número del entrevistadora                                           2.83 
+                     AN7             Código del medidor                                                  2.83 
+                     AN8             Peso del niño (kilogramos)                                          2.83 
+                     BMIFLAG         BMI flag WHO                                                        2.83 
+                     BR1             Tiene partida de nacimiento                                         2.83 
+                     CA1             Niño tuvo diarrea en las últimas semanas                            2.83 
+                     CA14            Niño ha tenido fiebre en las últimas 2 semanas                      2.83 
+                     CA16            Ha tenido alguna enfermedad con tos en las últimas dos semanas      2.83 
+                     CA17            Dificultad para respirar durante la enfermedad con tos              2.83 
+                     CAGE            edad (en meses)                                                     2.83 
+                     CAGED           edad (en dias)                                                      2.83 
+                     CAGE_11         edad (en meses)                                                     2.83 
+                     CAGE_6          edad (en meses)                                                     2.83 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   2
+
+   Variable                                                                                                               Percent
+   Name          Variable Label                                                                                           Missing
+
+   CDOB          Fecha de nacimiento del niño (CMC)                                                                         2.83 
+   CINSURANCE    Cubierto por seguro médico                                                                                 2.83 
+   EC1           Número de libros para niños o de dibujos                                                                   2.83 
+   EC2A          Juguetes caseros                                                                                           2.83 
+   EC2B          Juguetes de tienda                                                                                         2.83 
+   EC2C          Objetos del hogar u objetos del exterior                                                                   2.83 
+   EC3A          Número de días que lo dejó solo durante más de una hora                                                    2.83 
+   EC3B          Número de días que lo dejó a cargo de otro niño/a durante más de una hora                                  2.83 
+   FLAG          Bandera para indicadores de antropometria                                                                  2.83 
+   HAM           Porcientaje de la mediana de ref. Talla/edad Height for age percent of reference median NCHS               2.83 
+   HAP           Percenntil de la talla/edad NCHS                                                                           2.83 
+   HAZ           Desviacio estandar talla/edad Height for age z-score NCHS                                                  2.83 
+   HAZ2          Desviacion estandar de la Talla/edad Height for age z-score WHO                                            2.83 
+   HAZFLAG       Height for age flag WHO                                                                                    2.83 
+   UB1D          Día de nacimiento del niño                                                                                 2.83 
+   UB1M          Mes de nacimiento del niño                                                                                 2.83 
+   UB1Y          Año de nacimiento del niño                                                                                 2.83 
+   UB2           Edad del niño                                                                                              2.83 
+   UF11H         Fin de la entrevista - Hora                                                                                2.83 
+   UF11M         Fin de la entrevista - Minutos                                                                             2.83 
+   UF12          Idioma del cuestionario                                                                                    2.83 
+   UF13          Idiona de la entrevista                                                                                    2.83 
+   UF14          Lengua materna del entrevistado                                                                            2.83 
+   UF15          Traductor utilizado                                                                                        2.83 
+   WAM           Porncentaje de la mediana de ref. Peso/edad Weight for age percent of reference median NCHS                2.83 
+   WAP           Percentil del Peso/edad Weight for age percentile NCHS                                                     2.83 
+   WAZ           Desviacion estandar peso/edad Weight for age z-score NCHS                                                  2.83 
+   WAZ2          Desviacion estandar del Peseo/edad  Weight for age z-score WHO                                             2.83 
+   WAZFLAG       Weight for age flag WHO                                                                                    2.83 
+   WHM           Porcentaje de la mediana de referencia. Peso/Talla Weight for height percent of reference median NCHS      2.83 
+   WHP           Percentil del Peso/talla Weight for height percentile NCHS                                                 2.83 
+   WHZ           Desviacion estandar del Peso/Talla Weight for height z-score NCHS                                          2.83 
+   WHZ2          Weight for height z-score WHO                                                                              2.83 
+   WHZFLAG       Weight for height flag WHO                                                                                 2.83 
+   WHZNOAGE      Weight for height - Age flag WHO                                                                           2.83 
+   ZBMI          Desviacion estandar indice masa muscular Body Mass Index z-score WHO                                       2.83 
+   BMI           Indice de masa muscular WHO                                                                                2.85 
+   AN11          Talla del niño(a), de menos de dos años de edad (centímetros)                                              3.49 
+   ED5A          El nivel más alto de educación asistió                                                                     4.29 
+   ED5B          El grado más alto atendido en ese nivel                                                                    4.30 
+   AN9           Se desvistió el niño al mínimo                                                                             5.25 
+   AN12          Niño fue medido acostado o de pie                                                                          5.46 
+   HM1           Número de conglomerado                                                                                    11.45 
+   HM11          Resultado                                                                                                 11.45 
+   HM2           Número de hogar                                                                                           11.45 
+   HM3           Número de línea del niño(a)                                                                               11.45 
+   HM4           Edad del niño(a)                                                                                          11.45 
+   HM5           Número de línea de la madre o cuidador                                                                    11.45 
+   HM6           Número del entrevistadora                                                                                 11.45 
+   HM7           Código del medidor                                                                                        11.45 
+   HM7A          Niños(as) de 6 meses o más                                                                                11.45 
+   HM8           Consentimiento                                                                                            11.45 
+   HM10          Registre la medicion de hemoglobina                                                                       16.94 
+   UCD2A         Le quitó algún privilegio                                                                                 20.91 
+   UCD2B         Explicó el comportamiento erróneo                                                                         20.91 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   3
+
+Variable
+Name           Variable Label
+
+UCD2C          Lo/la sacudió                                                                                                        
+UCD2D          Le gritó, le gritó muy fuerte?                                                                                       
+UCD2E          Le dio otra cosa que hacer                                                                                           
+UCD2F          Le dio una tunda, lo/la nalgueó sólo con la mano                                                                     
+UCD2G          Lo/la golpeó en el trasero o en otra parte del cuerpo con un cinturón, un cepillo de pelo, un palo u otro objeto duro
+UCD2H          Lo/la llamó tonto/a, perezoso/a o alguna otra cosa parecida                                                          
+UCD2I          Lo/la golpeó / dio palmada en la cara, en la cabeza o en las orejas                                                  
+UCD2J          Lo/la golpeó o le dio una palmada en la mano, en el brazo o en la pierna                                             
+UCD2K          Le dio una paliza, le pegó una y otra vez lo más fuerte que pudo                                                     
+windex10r      Grupo Percentil de rur1                                                                                              
+windex5r       Quintiles de índice de riqueza rural                                                                                 
+wscorer        Puntuación de riqueza combinado rural                                                                                
+cdisability    Estado de discapacidad (edad 2-4 años)                                                                               
+UCF14          Comparado con niños de la misma edad, el niño tiene dificultad para recoger objetos pequeños con la mano             
+UCF15          El niño(a) tiene dificultad para entenderle a los padres o cuidadores                                                
+UCF16          Cuando el niño(a) habla, tienen ustedes dificultad para entenderle?                                                  
+UCF17          En comparación con los niños de la misma edad, el niño(a) tiene dificultad para aprender cosas                       
+UCF18          En comparación con niños de la misma edad, tiene el niño(a)dificultad para jugar?                                    
+UCF19          En comparación con niños de la misma edad,  el niño(a) qué tanto patea, muerde o golpea a otros?                     
+UCF2           Niños usa lentes/anteojos                                                                                            
+UCF3           Niño usa alguna prótesis auditiva                                                                                    
+UCF4           Niño usa algún aparato o recibe ayuda para caminar                                                                   
+UCF7           Cuanto usa anteojos, el niño tiene dificultad para ver                                                               
+UCF9           Cuando usa la protesis auditiva el niño tiene dificultad para oir sonidos, voces o musica?                           
+UCF13          Comparado con niños de la misma edad, el niño tiene dificultad para caminar                                          
+
+Percent
+Missing
+
+ 20.91 
+ 20.91 
+ 20.91 
+ 20.91 
+ 20.91 
+ 20.91 
+ 20.91 
+ 20.91 
+ 20.91 
+ 33.65 
+ 33.65 
+ 33.65 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.55 
+ 40.81 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   4
+
+Variable                                                                                                                     Percent
+Name        Variable Label                                                                                                   Missing
+
+BD2         Ha sido el/la niño(a) amamantado alguna vez                                                                       44.40 
+CA31        Lugar donde se eliminó última deposición                                                                          44.40 
+IM2         Tarjeta de vacunación del niño                                                                                    44.40 
+UCD4        Anteriormente respondió a las preguntas UCD5 o FCD5                                                               46.54 
+BD3         Todavía está siendo amamantado(a)                                                                                 48.03 
+IM5         Carnet de vacunacion o documento visto                                                                            48.28 
+IM6BD       Día de inmunización de BCG                                                                                        50.95 
+IM6DPT1D    Dia Refuerzo DPT 1                                                                                                50.95 
+IM6H0D      Día de inmunización de HepB (al nacer)                                                                            50.95 
+IM6M1D      Día de inmunización SRP                                                                                           50.95 
+IM6M2D      Día de inmunización SRP2                                                                                          50.95 
+IM6P1D      Día de inmunización de Polio  (VOP/Sabin o VPI)  1                                                                50.95 
+IM6P2D      Día de inmunización de Polio (VOP/Sabin o VPI) 2                                                                  50.95 
+IM6P3D      Día de inmunización de Polio (VOP/Sabin o VPI) 3                                                                  50.95 
+IM6P4D      Día de inmunización de Polio (VOP/Sabin o VPI) Refuerzo                                                           50.95 
+IM6PCV1D    Día de inmunización de Neumococo 1                                                                                50.95 
+IM6PCV2D    Día de inmunización de Neumococo 2                                                                                50.95 
+IM6PCV3D    Día de inmunización de Neumococo 3                                                                                50.95 
+IM6PENTA1D  Día de inmunización de Pentavalente (DPTHibHepB) 1                                                                50.95 
+IM6PENTA2D  Día de inmunización de Pentavalente (DPTHibHepB) 2                                                                50.95 
+IM6PENTA3D  Día de inmunización de Pentavalente (DPTHibHepB) 3                                                                50.95 
+IM6R1D      Día de inmunización de Rotavirus 1                                                                                50.95 
+IM6R2D      Día de inmunización de Rotavirus 2                                                                                50.95 
+IM6BM       Mes de inmunización de BCG                                                                                        53.07 
+IM6BY       Año de inmunización de BCG                                                                                        53.07 
+IM6PENTA1M  Mes de inmunización de Pentavalente (DPTHibHepB) 1                                                                54.26 
+IM6PENTA1Y  Año de inmunización de Pentavalente (DPTHibHepB) 1                                                                54.26 
+IM6PCV1M    Mes de inmunización de Neumococo 1                                                                                54.59 
+IM6PCV1Y    Año de inmunización de Neumococo 1                                                                                54.59 
+UCD5        Cree usted que para criar o educar correctamente a un niño/una niña, se le debe castigar físicamente              54.61 
+IM6H0M      Mes de inmunización de HepB (al nacer)                                                                            54.92 
+IM6H0Y      Año de inmunización de HepB (al nacer)                                                                            54.92 
+IM6P1M      Mes de inmunización de Polio  (VOP/Sabin o VPI)  1                                                                55.06 
+IM6P1Y      Año de inmunización de Polio  (VOP/Sabin o VPI)  1                                                                55.06 
+IM6R1M      Mes de inmunización de Rotavirus 1                                                                                55.23 
+IM6R1Y      Año de inmunización de Rotavirus 1                                                                                55.23 
+EC5BY       Contó cuentos - Nadie                                                                                             56.80 
+IM6PENTA2M  Mes de inmunización de Pentavalente (DPTHibHepB) 2                                                                57.48 
+IM6PENTA2Y  Año de inmunización de Pentavalente (DPTHibHepB) 2                                                                57.48 
+IM6PCV2M    Mes de inmunización de Neumococo 2                                                                                57.84 
+IM6PCV2Y    Año de inmunización de Neumococo 2                                                                                57.84 
+UB6         Ha asistido a programa de educación pre básica o algun programa de la primera infancia(guarderias, kinder. etc)   58.42 
+EC10        Se siente a veces demasiado enfermo como para jugar                                                               58.43 
+EC11        Puede seguir instrucciones sencillas sobre cómo hacer algo correctamente                                          58.43 
+EC12        Cuando se le da algo al niño(a) para hacer, puede hacerlo por si solo(a)                                          58.43 
+EC13        Se lleva bien con los otros niños/as                                                                              58.43 
+EC14        Patea, muerde o golpea a otros niños/as o adultos                                                                 58.43 
+EC15        Se distrae fácilmente                                                                                             58.43 
+EC6         Puede identificar o nombrar por lo menos diez letras del alfabeto                                                 58.43 
+EC7         Puede leer al menos cuatro palabras sencillas y populares                                                         58.43 
+EC8         Sabe el nombre y reconoce el símbolo de todos los números del 1 al 10                                             58.43 
+EC9         Puede recoger un objeto pequeño con dos dedos, como un palo o una piedra del piso                                 58.43 
+IM6P2M      Mes de inmunización de Polio (VOP/Sabin o VPI) 2                                                                  58.48 
+IM6P2Y      Año de inmunización de Polio (VOP/Sabin o VPI) 2                                                                  58.48 
+IM6R2M      Mes de inmunización de Rotavirus 2                                                                                58.65 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   5
+
+      Variable                                                                                                        Percent
+      Name          Variable Label                                                                                    Missing
+
+      IM6R2Y        Año de inmunización de Rotavirus 2                                                                 58.65 
+      EC5AY         Leyó libros - Nadie                                                                                59.05 
+      EC5FY         Nombró - Nadie                                                                                     59.90 
+      IM9           Niño recibió otras vacunas durante campañas, días de inmunización o días de salud infantil         60.78 
+      IM6PENTA3M    Mes de inmunización de Pentavalente (DPTHibHepB) 3                                                 60.94 
+      IM6PENTA3Y    Año de inmunización de Pentavalente (DPTHibHepB) 3                                                 60.94 
+      IM6PCV3M      Mes de inmunización de Neumococo 3                                                                 61.39 
+      IM6PCV3Y      Año de inmunización de Neumococo 3                                                                 61.39 
+      IM6P3M        Mes de inmunización de Polio (VOP/Sabin o VPI) 3                                                   61.82 
+      IM6P3Y        Año de inmunización de Polio (VOP/Sabin o VPI) 3                                                   61.82 
+      BD4           Ayer, durante el día o la noche, bebió algún líquido de una botella con chupón, pepe o biberón     62.29 
+      BD5           Tomó ayer Solución de Sales de Rehidratación Oral, durante el dia o la noche                       62.29 
+      BD6           Ayer tomó suplementos vitamínicos o minerales o algún medicamento durante el dia o la noche        62.29 
+      BD7A          Niño tomo ayer agua sola                                                                           62.29 
+      BD7B          Niño tomo ayer Jugo o bebidas de jugo                                                              62.29 
+      BD7C          Niño tomo ayer Caldo no espeso                                                                     62.29 
+      BD7D          Niño tomo ayer leche de fórmula                                                                    62.29 
+      BD7E          Niño tomo ayer leche de origen animal, como leche fresca, envasada ..?                             62.29 
+      BD7X          Niño tomo ayer Otros líquidos                                                                      62.29 
+      BD8A          Niño comió ayer Yogurt                                                                             62.29 
+      BD8B          Niño comió ayer alimento fortificado para bebé                                                     62.29 
+      BD8C          Niño comió ayer Alimentos elaborados con granos                                                    62.29 
+      BD8D          Niño comió ayer calabaza, zanahoria, ayote, camote, etc.                                           62.29 
+      BD8E          Niño comió ayer Alimentos hechos a base de raíces                                                  62.29 
+      BD8F          Niño comió ayer Verduras de hojas verde oscuro y frondosas                                         62.29 
+      BD8G          Niño comió ayer Mangos/Papaya maduros                                                              62.29 
+      BD8H          Niño comió ayer Otras frutas o verduras                                                            62.29 
+      BD8I          Niño comió ayer vísceras                                                                           62.29 
+      BD8J          Niño comió ayer Otro tipo de carne                                                                 62.29 
+      BD8K          Niño comió ayer huevos                                                                             62.29 
+      BD8L          Niño comió ayer Pescado fresco o seco                                                              62.29 
+      BD8M          Niño comió ayer alimentos a base de frijoles, guisantes, nueces, lentejas. etc.                    62.29 
+      BD8N          Niño comió ayer queso u otros alimentos hechos a base de leche de origen animal                    62.29 
+      BD8X          Niño comió ayer otro alimento sólido, semisólido o blando                                          62.29 
+      BD9           Veces que comió alimentos sólidos, semisólidos o blandos ayer                                      62.29 
+      windex10u     Grupo Percentil de urb1                                                                            63.51 
+      windex5u      Quintiles de índice de riqueza urbanos                                                             63.51 
+      wscoreu       Puntuación de riqueza combinado urbano                                                             63.51 
+      IM6M1M        Mes de inmunización SRP                                                                            68.92 
+      IM6M1Y        Año de inmunización SRP                                                                            68.92 
+      EC5EA         Jugó con - Madre                                                                                   68.94 
+      EC5CY         Cantó canciones - Nadie                                                                            69.76 
+      EC5DA         Lo llevó fuera - Madre                                                                             72.58 
+      EC5DY         Lo llevó fuera - Nadie                                                                             73.52 
+      EC5CA         Cantó canciones - Madre                                                                            76.84 
+      CA20          Buscó consejo o tratamiento para la enfermedad de algun proveedor                                  77.26 
+      CA22          En algun momento durante la enfermedad, le dio medicamentos para tratar esa enfermedad?            77.26 
+      IM6P4M        Mes de inmunización de Polio (VOP/Sabin o VPI) Refuerzo                                            80.18 
+      IM6P4Y        Año de inmunización de Polio (VOP/Sabin o VPI) Refuerzo                                            80.18 
+      IM6DPT1M      Mes de Refuerzo DPT 1                                                                              80.53 
+      IM6DPT1Y      Año de Refuerzo DPT 1                                                                              80.53 
+      EC5EY         Jugó con - Nadie                                                                                   80.59 
+      CA15          Se le ha tomado muestra de sangre del dedo?                                                        82.15 
+      EC5FA         Nombró - Madre                                                                                     84.92 
+      EC5AA         Leyó libros - Madre                                                                                86.46 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   6
+
+   Variable                                                                                                              Percent
+     Name      Variable Label                                                                                            Missing
+
+    CA23R      Medicamento:Paracetamol/Panadol/Acetaminofén                                                               86.57 
+    CA12       Se le dio otra cosa para tratar la diarrea                                                                 86.64 
+    CA1A       Habia sangre en las evacuaciones?                                                                          86.64 
+    CA3        Al niño se le dio de beber menos o más (leche materna,solucion de sales..) durante la diarrea              86.64 
+    CA4        Al niño se le dio de comer menos o más de lo habitual durante la diarrea                                   86.64 
+    CA5        Buscó consejo o tratamiento para la diarrea de alguna fuente                                               86.64 
+    CA7A       Durante el episodio de diarrea, se le dio al niño Fluido de SRO en paquete                                 86.64 
+    CA7B       Durante el episodio de diarrea: se le dio al niño Fluido de SRO pre-envasado                               86.64 
+    CA7C       Durante el episodio de diarrea: se le dio al niño pastillas o jarabe de Zinc                               86.64 
+    CA7D       Durante el episodio de diarrea: suero casero(agua de arroz,preparado con agua hervida, limon y azucar)     86.64 
+    IM6M2M     Mes de inmunización SRP2                                                                                   86.87 
+    IM6M2Y     Año de inmunización SRP2                                                                                   86.87 
+    EC5EB      Jugó con - Padre                                                                                           87.64 
+    BD7E1      Número de veces bebió leche                                                                                88.21 
+    EC5BA      Contó cuentos - Madre                                                                                      88.58 
+    EC5EX      Jugó con - Otro                                                                                            88.68 
+    CA18       Síntomas se debieron a problema en el pecho o nariz tapada o moquera?                                      89.28 
+    HH7_B      Región/Departamento                                                                                        90.10 
+    EC5DB      Lo llevó fuera - Padre                                                                                     90.55 
+    HH7_C      Región/Departamento                                                                                        91.25 
+    BD7D1      Número de veces bebió leche de fórmula                                                                     91.66 
+    BR2        Nacimiento fue registrado ante el Registro Nacional de las Personas                                        92.16 
+    UB7        Durante el año escolar actual ha asistido al programa educativo                                            93.08 
+    UB8        Actualmente asiste a pre básica o al programa educativo mencionado en UB6?                                 93.29 
+    EC5CX      Cantó canciones - Otro                                                                                     93.38 
+    IM11       Niño ha sido vacunado alguna vez                                                                           93.46 
+    CA21D      Lugar recibió consejo o tratamiento: CESAMO                                                                94.00 
+    CA23L      Medicamento (Antibióticos):Amoxicillina                                                                    94.15 
+    IM14       Recibió alguna vez la vacuna BCG                                                                           94.30 
+    IM15       Recibió (nombre) alguna vez la vacuna de Hepatitis B                                                       94.30 
+    IM16       Recibió alguna vacuna en forma de gotas en la boca o inyectada para protegerlo de la polio                 94.30 
+    IM20       Recibió alguna vez una vacuna Pentavalente                                                                 94.30 
+    IM22       Recibió alguna vez una vacuna Neumocócica                                                                  94.30 
+    IM24       Recibió vacuna contra el Rotavirus                                                                         94.30 
+    IM26       Recibió una vacuna SRP                                                                                     94.30 
+    IM29       Niño recibió de la vacuna de DPT, una vacuna que se suministra a los 18 meses                              94.30 
+    EC5CB      Cantó canciones - Padre                                                                                    94.40 
+    EC5DX      Lo llevó fuera - Otro                                                                                      94.55 
+    IM3        Alguna vez tuvo carnet o registros de vacunacion?                                                          94.82 
+    IM18       Veces que recibió las gotas e inyecciones de Polio                                                         94.84 
+    CA23X      Medicamento:Otro                                                                                           95.03 
+    EC5AX      Leyó libros - Otro                                                                                         95.06 
+    IM21       Número de veces que recibió la vacuna Pentavelente                                                         95.08 
+    IM23       Veces que recibió la vacuna Neumocócica                                                                    95.31 
+    IM25       Número de veces que recibió vacuta contra el Rotavirus                                                     95.36 
+    EC5FX      Nombró - Otro                                                                                              95.51 
+    EC5BX      Contó cuentos - Otro                                                                                       95.90 
+    IM26A      Número de veces que recibió la vacuna MMR                                                                  96.04 
+    EC5AB      Leyó libros - Padre                                                                                        96.52 
+    BR3        Sabe cómo registrar el nacimiento                                                                          96.60 
+    EC5BB      Contó cuentos - Padre                                                                                      96.61 
+    EC5FB      Nombró - Padre                                                                                             96.65 
+    CA25D      Lugar donde obtuvo el antibiótico: CESAMO                                                                  96.94 
+    CA6D       Lugar recibió consejo o tratamiento: CESAMO                                                                96.99 
+    CA21J      Lugar recibió consejo o tratamiento: clinica privada                                                       97.13 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   7
+
+              Variable                                                                                        Percent
+                Name      Variable Label                                                                      Missing
+
+               CA21A      Lugar recibió consejo o tratamiento: hospital secretaria de salud                    97.34 
+               CA9K       Lugar donde obtuvo el SRO: farmacia                                                  97.82 
+               CA9D       Lugar donde obtuvo el SRO: CESAMO                                                    97.88 
+               CA25K      Lugar donde obtuvo el antibiótico: farmacia                                          97.99 
+               CA23N      Medicamento (Antibióticos):Otro antibiótico en pastilla o jarabe                     98.36 
+               CA6J       Lugar recibió consejo o tratamiento: clinica privada                                 98.38 
+               CA21E      Lugar recibió consejo o tratamiento: CESAR                                           98.49 
+               CA13A      Otro tratamiento (Pastilla o jarabe):Antibiótico                                     98.53 
+               CA13X      Otro tatamiento: Otro                                                                98.59 
+               CA25A      Lugar donde obtuvo el antibiótico: hospital secretaria de salud                      98.68 
+               CA11D      Lugar donde obtuvo el zinc: CESAMO                                                   98.70 
+               CA13B      Otro tratamiento (Pastilla o jarabe):Antiespasmódico (anti-diarrea)                  98.77 
+               BD8A1      Número de veces que comió yogurt                                                     98.84 
+               CA23O      Medicamento (Antibióticos):Otro antibiótico en inyección                             98.94 
+               CA23T      Medicamento:Ibuprofeno                                                               99.00 
+               CA11K      Lugar donde obtuvo el zinc: farmacia                                                 99.12 
+               CA25J      Lugar donde obtuvo el antibiótico: clinica privada                                   99.16 
+               CA6A       Lugar recibió consejo o tratamiento: hospital secretaria de salud                    99.17 
+               CA6E       Lugar recibió consejo o tratamiento: CESAR                                           99.20 
+               CA25E      Lugar donde obtuvo el antibiótico: CESAR                                             99.31 
+               CA9E       Lugar donde obtuvo el SRO: CESAR                                                     99.40 
+               CA21K      Lugar recibió consejo o tratamiento: farmacia                                        99.41 
+               CA9Q       Lugar donde obtuvo el SRO: tienda / mercado / calle                                  99.41 
+               CA13Q      Otro tratamiento:Remedio casero / medicina a base de hierbas                         99.44 
+               CA11Q      Lugar donde obtuvo el zinc: tienda / mercado / calle                                 99.45 
+               CA9A       Lugar donde obtuvo el SRO: hospital secretaria de salud                              99.46 
+               CA23W      Medicamento: Solo mencionó la marca                                                  99.51 
+               CA21B      Lugar recibió consejo o tratamiento: hospital del IHSS                               99.52 
+               CA9J       Lugar donde obtuvo el SRO: clinica privada                                           99.55 
+               CA23Z      Medicamento:No sabe                                                                  99.58 
+               CA6K       Lugar recibió consejo o tratamiento: farmacia                                        99.62 
+               CA13G      Otro tratamiento (Pastilla o jarabe):Otra pastilla o jarabe                          99.63 
+               CA11E      Lugar donde obtuvo el zinc: CESAR                                                    99.67 
+               CA11A      Lugar donde obtuvo el zinc: hospital secretaria de salud                             99.68 
+               CA25B      Lugar donde obtuvo el antibiótico: hospital del IHSS                                 99.72 
+               CA13L      Otro tratamiento (Inyección):Antibiótica                                             99.74 
+               CA23M      Medicamento (Antibióticos):Cotrimoxazol                                              99.74 
+               UCF11      Cuando no usa el aparato ni recibe ayuda, el niño tiene dificultad para caminar?     99.74 
+               UCF12      Cuando usa el aparato o recibe ayuda, el niño tiene dificultad para caminar?         99.74 
+               CA25Q      Lugar donde obtuvo el antibiótico: tienda / mercado / calle                          99.77 
+               CA11J      Lugar donde obtuvo el zinc: clinica privada                                          99.78 
+               CA6B       Lugar recibió consejo o tratamiento: hospital del IHSS                               99.78 
+               CA13H      Otro tratamiento (Pastilla o jarabe):No sabe tipo de pastilla o jarabe               99.79 
+               CA29       Tiempo transcurrió hasta que niño empezó medicamentos                                99.80 
+               CA25X      Lugar donde obtuvo el antibiótico: otro                                              99.83 
+               CA21H      Lugar recibió consejo o tratamiento: otro médico público                             99.84 
+               CA21I      Lugar recibió consejo o tratamiento: hospital privado                                99.84 
+               CA21X      Lugar recibió consejo o tratamiento: otro                                            99.84 
+               CA6X       Lugar recibió consejo o tratamiento: otro                                            99.85 
+               CA11X      Lugar donde obtuvo el zinc: otro                                                     99.86 
+               CA6P       Lugar recibió consejo o tratamiento: familiar / amigo                                99.86 
+               CA9P       Lugar donde obtuvo el SRO: familiar / amigo                                          99.86 
+               CA9X       Lugar donde obtuvo el SRO: otro                                                      99.86 
+               CA23K      Medicamento (Antimaláricos):Otro antimalárico                                        99.87 
+               CA13N      Otro tratamiento (Inyección):No sabe tipo de inyección                               99.89 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   8
+
+                      Variable                                                                         Percent
+                        Name      Variable Label                                                       Missing
+
+                       CA21L      Lugar recibió consejo o tratamiento: clinica ong                      99.89 
+                       CA13M      Otro tratamiento (Inyección):No antibiótica                           99.90 
+                       CA6H       Lugar recibió consejo o tratamiento: otro público (especifique..)     99.90 
+                       EC5ANR     Leyó libros - No responde                                             99.90 
+                       CA11P      Lugar donde obtuvo el zinc: familiar / amigo                          99.91 
+                       CA13O      Otro tratamiento:Intravenosa (iv)                                     99.91 
+                       CA9B       Lugar donde obtuvo el SRO: hospital del IHSS                          99.91 
+                       CA23C      Medicamento (Antimaláricos):Cloroquina                                99.92 
+                       CA25H      Lugar donde obtuvo el antibiótico: otro médico público                99.92 
+                       CA9F       Lugar donde obtuvo el SRO: voluntarios de salud                       99.92 
+                       CA6Q       Lugar recibió consejo o tratamiento: tienda / mercado / calle         99.93 
+                       CA13NR     Otro tatamiento: No responde                                          99.94 
+                       CA21P      Lugar recibió consejo o tratamiento: familiar / amigo                 99.94 
+                       CA21Q      Lugar recibió consejo o tratamiento: tienda / mercado / calle         99.94 
+                       CA23S      Medicamento:Aspirina                                                  99.94 
+                       CA27A      Lugar donde obtuvo el antimalárico: hospital secretaria de salud      99.94 
+                       CA6I       Lugar recibió consejo o tratamiento: hospital privado                 99.94 
+                       CA9H       Lugar donde obtuvo el SRO: otro médico público                        99.94 
+                       EC5BNR     Contó cuentos - No responde                                           99.94 
+                       EC5CNR     Cantó canciones - No responde                                         99.94 
+                       EC5DNR     Lo llevó fuera - No responde                                          99.94 
+                       EC5ENR     Jugó con - No responde                                                99.94 
+                       CA11H      Lugar donde obtuvo el zinc: otro médico público                       99.95 
+                       CA11W      Lugar donde obtuvo el zinc:No sabe si público o privado               99.95 
+                       CA21F      Lugar recibió consejo o tratamiento: voluntarios de salud             99.95 
+                       CA21O      Lugar recibió consejo o tratamiento: otro médico privado              99.95 
+                       CA21W      Lugar recibió consejo o tratamiento: : No sabe público o privado      99.95 
+                       CA25P      Lugar donde obtuvo el antibiótico: familiar / amigo                   99.95 
+                       CA27D      Lugar donde obtuvo el antimalárico: CESAMO                            99.95 
+                       CA6F       Lugar recibió consejo o tratamiento:voluntarios de salud              99.95 
+                       CA6L       Lugar recibió consejo o tratamiento: clinica ong                      99.95 
+                       CA9Z       Lugar donde obtuvo el SRO: no sabe, no recuerda                       99.95 
+                       EC5FNR     Nombró - No responde                                                  99.95 
+                       CA21R      Lugar recibió consejo o tratamiento: curandero/chaman                 99.97 
+                       CA25O      Lugar donde obtuvo el antibiótico: otro médico privado                99.97 
+                       CA27J      Lugar donde obtuvo el antimalárico: clinica privada                   99.97 
+                       CA6O       Lugar recibió consejo o tratamiento: otro médico privado              99.97 
+                       CA9L       Lugar donde obtuvo el SRO: clinica ong                                99.97 
+                       CA11B      Lugar donde obtuvo el zinc: hospital del IHSS                         99.98 
+                       CA11L      Lugar donde obtuvo el zinc: clinica ong                               99.98 
+                       CA23I      Medicamento (Antimaláricos):Primaquina                                99.98 
+                       CA25I      Lugar donde obtuvo el antibiótico: hospital privado                   99.98 
+                       CA25L      Lugar donde obtuvo el antibiótico: clinica ong                        99.98 
+                       CA25W      Lugar donde obtuvo el antibiótico: No sabe púublico o privado         99.98 
+                       CA27E      Lugar donde obtuvo el antimalárico: CESAR                             99.98 
+                       CA27K      Lugar donde obtuvo el antimalárico: farmacia                          99.98 
+                       CA9I       Lugar donde obtuvo el SRO: hospital privado                           99.98 
+                       CA9M       Lugar donde obtuvo el SRO: clínica móvil                              99.98 
+                       CA11O      Lugar donde obtuvo el zinc: otro médico privado                       99.99 
+                       CA11R      Lugar donde obtuvo el zinc: curandero/chaman                          99.99 
+                       CA11Z      Lugar donde obtuvo el zinc: no sabe/no recuerda                       99.99 
+                       CA21M      Lugar recibió consejo o tratamiento: clínica móvil                    99.99 
+                       CA21NR     Lugar recibió consejo o tratamiento: No responde                      99.99 
+                       CA23NR     Medicamento:No responde                                               99.99 
+                       CA27Q      Lugar donde obtuvo el antimalárico: tienda / mercado / calle          99.99 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025   9
+
+                      Variable                                                                         Percent
+                        Name      Variable Label                                                       Missing
+
+                       CA27X      Lugar donde obtuvo el antimalárico: otro                              99.99 
+                       CA9NR      Lugar donde obtuvo el SRO: no responde                                99.99 
+                       CA9O       Lugar donde obtuvo el SRO: otro médico privado                        99.99 
+                       CA9W       Lugar donde obtuvo el SRO: No sabe si público o privado               99.99 
+                       AE5C       IHSS                                                                 100.00 
+                       AE5D       Seguro Militar                                                       100.00 
+                       AE5E       Seguro Privado                                                       100.00 
+                       AE5X       Otro                                                                 100.00 
+                       CA11F      Lugar donde obtuvo el zinc: voluntarios de salud                     100.00 
+                       CA11I      Lugar donde obtuvo el zinc: hospital privado                         100.00 
+                       CA11M      Lugar donde obtuvo el zinc: clínica móvil                            100.00 
+                       CA11NR     Lugar donde obtuvo el zinc: no responde                              100.00 
+                       CA25F      Lugar donde obtuvo el antibiótico: voluntarios de salud              100.00 
+                       CA25M      Lugar donde obtuvo el antibiótico: clínica móvil                     100.00 
+                       CA25NR     Lugar donde obtuvo el antibiótico: no responde                       100.00 
+                       CA25R      Lugar donde obtuvo el antibiótico: curandero/chaman                  100.00 
+                       CA25Z      Lugar donde obtuvo el antibiótico: no sabe/no recuerda               100.00 
+                       CA27B      Lugar donde obtuvo el antimalárico: hospital del IHSS                100.00 
+                       CA27F      Lugar donde obtuvo el antimalárico: voluntarios de salud             100.00 
+                       CA27H      Lugar donde obtuvo el antimalárico: otro médico público              100.00 
+                       CA27I      Lugar donde obtuvo el antimalárico: hospital privado                 100.00 
+                       CA27L      Lugar donde obtuvo el antimalárico: clinica ong                      100.00 
+                       CA27M      Lugar donde obtuvo el antimalárico: clínica móvil                    100.00 
+                       CA27NR     Lugar donde obtuvo el antimalárico: no responde                      100.00 
+                       CA27O      Lugar donde obtuvo el antimalárico: otro médico privado              100.00 
+                       CA27P      Lugar donde obtuvo el antimalárico: familiar / amigo                 100.00 
+                       CA27R      Lugar donde obtuvo el antimalárico: curandero/chaman                 100.00 
+                       CA27W      Lugar donde obtuvo el antimalárico:: No sabe público o privado       100.00 
+                       CA27Z      Lugar donde obtuvo el antimalárico: no sabe/no recuerda              100.00 
+                       CA6M       Lugar recibió consejo o tratamiento: clínica móvil                   100.00 
+                       CA6NR      Lugar recibió consejo o tratamiento: No responde                     100.00 
+                       CA6W       Lugar recibió consejo o tratamiento: no sabe si público o privado    100.00 
+                                          Missing Data Report (Sorted by Percent Missing)          15:02 Wednesday, June 4, 2025  10
+
+                                 Variable                                                  Percent
+                                 Name          Variable Label                              Missing
+
+                                 BH0           Número de línea                               0.00 
+                                 BH10          Algún otro entre nacimientos                  0.00 
+                                 BH2           Gemelos                                       0.00 
+                                 BH3           Sexo del niño                                 0.00 
+                                 BH4C          Fecha de nacimiento del hijo (CMC)            0.00 
+                                 BH4D          Día de nacimiento                             0.00 
+                                 BH4F          Badera de la fecha de BH4C                    0.00 
+                                 BH4M          Mes de nacimiento                             0.00 
+                                 BH4Y          Año de nacimiento                             0.00 
+                                 BH5           Está vivo                                     0.00 
+                                 BHLN          Birth history line number                     0.00 
+                                 birthint      Intervalo de nacimiento anterior              0.00 
+                                 brthord       Orden de nacimiento                           0.00 
+                                 ethnicity     Etnia del jefe de hogar                       0.00 
+                                 HH1           Número de conglomerado                        0.00 
+                                 HH2           Número de hogar                               0.00 
+                                 HH4           Número del supervisora                        0.00 
+                                 HH6           Area                                          0.00 
+                                 HH7           Región/Departamento                           0.00 
+                                 HH7_A         Región/Departamento                           0.00 
+                                 insurance     Cubierto por seguro médico                    0.00 
+                                 LN            Numero de linea                               0.00 
+                                 magebrt        Edad de la madre al nacer                    0.00 
+                                 PSU           Primary sampling unit                         0.00 
+                                 stratum       Estrato                                       0.00 
+                                 WDOB          Fecha de nacimiento de la mujer (CMC)         0.00 
+                                 WDOI          Fecha de la entrevista de mujer (CMC)         0.00 
+                                 welevel       Educación                                     0.00 
+                                 windex10      Grupo Percentil de com1                       0.00 
+                                 windex5       Quintiles de índice de riqueza                0.00 
+                                 WM1           Número de conglomerado                        0.00 
+                                 WM2           Número de hogar                               0.00 
+                                 WM3           Número de línea de la mujer                   0.00 
+                                 WMINT         Número del entrevistador del hogar            0.00 
+                                 wmweight      Pesos muestral de de las mujeres              0.00 
+                                 wscore        Puntuación de riqueza combinado               0.00 
+                                 disability    Dificultades funcionales (18-49 años)         0.60 
+                                 BH6           Edad del niño                                 3.63 
+                                 BH7           Viviendo con la entrevistada                  3.63 
+                                 BH8           Número de línea del niño en el hogar          3.63 
+                                 windex10r     Grupo Percentil de rur1                      34.57 
+                                 windex5r      Quintiles de índice de riqueza rural         34.57 
+                                 wscorer       Puntuación de riqueza combinado rural        34.57 
+                                 windex10u     Grupo Percentil de urb1                      65.43 
+                                 windex5u      Quintiles de índice de riqueza urbanos       65.43 
+                                 wscoreu       Puntuación de riqueza combinado urbano       65.43 
+                                 HH7_B         Región/Departamento                          90.49 
+                                 HH7_C         Región/Departamento                          91.00 
+                                 BH9C          Edad a la muerte en meses (imputed)          96.37 
+                                 BH9F          Bandera de la fecha de BH9C                  96.37 
+                                 BH9N          Edad a la muerte (número)                    96.37 
+                                 BH9U          Edad a la muerte (unidades)                  96.37 

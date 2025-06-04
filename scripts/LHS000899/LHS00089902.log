@@ -1,0 +1,52 @@
+1                                                          The SAS System                              15:02 Wednesday, June 4, 2025
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2023 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M8) 
+      Licensed to UNIVERSITY OF NORTH CAROLINA CHAPEL HILL - SFA T&R, Site 70022629.
+NOTE: This session is executing on the W32_WIN+PRO  platform.
+
+
+
+NOTE: Analytical products:
+      
+      SAS/STAT 15.3
+      SAS/ETS 15.3
+      SAS/OR 15.3
+      SAS/IML 15.3
+      SAS/QC 15.3
+
+NOTE: Additional host information:
+
+ W32_WIN+PRO WIN 10.0.22631  Workstation
+
+NOTE: SAS initialization used:
+      real time           11.96 seconds
+      cpu time            0.00 seconds
+      
+1          * set macrovariables;
+2          %let homepath = J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008;
+3          %let job = lhs000899;
+4          %let subjob = lhs00089902;
+5          
+6          * log and print files;
+7          proc printto log = "&homepath./scripts/&job./&subjob._&sysdate..log"
+8          	print = "&homepath./scripts/&job./&subjob._&sysdate..lst" new;
+9          run;
+
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           12.97 seconds
+      cpu time            0.23 seconds
+      

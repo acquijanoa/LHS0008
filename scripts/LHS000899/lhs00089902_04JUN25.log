@@ -1,0 +1,355 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+      
+
+10         
+11         /*
+12         	
+13         	Program: LHS00089902.sas
+14         
+15         	Description: Produce the missing data report for the dhs 2015
+16         				child_recode dataset
+17         	
+18         	Programmer: Alvaro Quijano-Angarita
+19         
+20         	Date: 15may25
+21         
+22         	Version:
+2                                                          The SAS System                              15:02 Wednesday, June 4, 2025
+
+23         				04jun25: Create the file
+24         
+25         
+26         */
+27         options mprint;
+28         
+29         * include SAS code for formats and macros;
+30         %include "&homepath./scripts/lhs000891/lhs0008_missing_report.sas";
+154        
+155        * set libraries;
+156        libname raw "&homepath./data/raw" access=readonly;
+NOTE: Libref RAW was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008\data\raw
+157        run;
+158        
+159        * define macro variables;
+160        %let prg = AQA;
+161        
+162        * Create the missing data report;
+163        %missing_report(data = raw.children,
+164        					outpath = &homepath./scripts/&job./,
+165        					outname = &subjob._children_recode_missing.rtf);
+MPRINT(MISSING_REPORT):   data dt;
+MPRINT(MISSING_REPORT):   set raw.children;
+MPRINT(MISSING_REPORT):   format _all_;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 8713 observations read from the data set RAW.CHILDREN.
+NOTE: The data set WORK.DT has 8713 observations and 442 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.24 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(MISSING_REPORT):   proc contents data=dt out=varinfo(keep=name label type) noprint;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: The data set WORK.VARINFO has 442 observations and 3 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(MISSING_REPORT):   data varinfo_filtered;
+MPRINT(MISSING_REPORT):   set varinfo;
+MPRINT(MISSING_REPORT):   *if index(upcase(label), 'NA -') = 0;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 442 observations read from the data set WORK.VARINFO.
+NOTE: The data set WORK.VARINFO_FILTERED has 442 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(MISSING_REPORT):   proc sql noprint;
+MPRINT(MISSING_REPORT):   select name into :num_vars separated by ' ' from varinfo_filtered where type = 1;
+3                                                          The SAS System                              15:02 Wednesday, June 4, 2025
+
+MPRINT(MISSING_REPORT):   select name into :char_vars separated by ' ' from varinfo_filtered where type = 2;
+MPRINT(MISSING_REPORT):   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(MISSING_REPORT):   data missing_report;
+MPRINT(MISSING_REPORT):   set dt end=last;
+MPRINT(MISSING_REPORT):   array num_vars {*} AN1 AN2 AN3 AN4 AN5 AN6 AN7 AN8 AN9 AN11 AN12 AN13D AN13M AN13Y BD2 BD3 BD4 BD5 BD6 
+BD9 BD7A BD7B BD7C BD7D BD7D1 BD7E BD7E1 BD7X BD8A BD8A1 BD8B BD8C BD8D BD8E BD8F BD8G BD8H BD8I BD8J BD8K BD8L BD8M BD8N BD8X BMI 
+BMIFLAG BR1 BR2 BR3 CA1 CA3 CA4 CA5 CA12 CA14 CA15 CA16 CA17 CA18 CA20 CA22 CA29 CA31 CA1A CA7A CA7B CA7C CA7D CAGE CAGED CAGE_6 
+CAGE_11 CDOB CDOI CINSURANCE EC1 EC6 EC7 EC8 EC9 EC10 EC11 EC12 EC13 EC14 EC15 EC2A EC2B EC2C EC3A EC3B ED5A ED5B FLAG HAM HAP HAZ 
+HAZ2 HAZFLAG HH1 HH2 HH4 HH6 HH7 HH7_A HH7_B HH7_C HL4 HM1 HM2 HM3 HM4 HM5 HM6 HM7 HM8 HM10 HM11 HM7A IM2 IM3 IM5 IM9 IM11 IM14 
+IM15 IM16 IM18 IM20 IM21 IM22 IM23 IM24 IM25 IM26 IM29 IM26A IM6BD IM6BM IM6BY IM6DPT1D IM6DPT1M IM6DPT1Y IM6H0D IM6H0M IM6H0Y 
+IM6M1D IM6M1M IM6M1Y IM6M2D IM6M2M IM6M2Y IM6P1D IM6P1M IM6P1Y IM6P2D IM6P2M IM6P2Y IM6P3D IM6P3M IM6P3Y IM6P4D IM6P4M IM6P4Y 
+IM6PCV1D IM6PCV1M IM6PCV1Y IM6PCV2D IM6PCV2M IM6PCV2Y IM6PCV3D IM6PCV3M IM6PCV3Y IM6PENTA1D IM6PENTA1M IM6PENTA1Y IM6PENTA2D 
+IM6PENTA2M IM6PENTA2Y IM6PENTA3D IM6PENTA3M IM6PENTA3Y IM6R1D IM6R1M IM6R1Y IM6R2D IM6R2M IM6R2Y LN PSU UB2 UB6 UB7 UB8 UB1D UB1M 
+UB1Y UCD4 UCD5 UCD2A UCD2B UCD2C UCD2D UCD2E UCD2F UCD2G UCD2H UCD2I UCD2J UCD2K UCF2 UCF3 UCF4 UCF7 UCF9 UCF11 UCF12 UCF13 UCF14 
+UCF15 UCF16 UCF17 UCF18 UCF19 UF1 UF2 UF3 UF4 UF5 UF6 UF9 UF10 UF12 UF13 UF14 UF15 UF17 UF11H UF11M UF7D UF7M UF7Y UF8H UF8M UFHINT 
+UFINT WAM WAP WAZ WAZ2 WAZFLAG WHM WHP WHZ WHZ2 WHZFLAG WHZNOAGE ZBMI caretakerdis cdisability chweight ethnicity melevel stratum 
+windex5 windex10 windex10r windex10u windex5r windex5u wscore wscorer wscoreu;
+MPRINT(MISSING_REPORT):   array num_miss[273] _temporary_;
+MPRINT(MISSING_REPORT):   array char_vars {*} AE5C AE5D AE5E AE5X CA11A CA11B CA11D CA11E CA11F CA11H CA11I CA11J CA11K CA11L CA11M 
+CA11NR CA11O CA11P CA11Q CA11R CA11W CA11X CA11Z CA13A CA13B CA13G CA13H CA13L CA13M CA13N CA13NR CA13O CA13Q CA13X CA21A CA21B 
+CA21D CA21E CA21F CA21H CA21I CA21J CA21K CA21L CA21M CA21NR CA21O CA21P CA21Q CA21R CA21W CA21X CA23C CA23I CA23K CA23L CA23M 
+CA23N CA23NR CA23O CA23R CA23S CA23T CA23W CA23X CA23Z CA25A CA25B CA25D CA25E CA25F CA25H CA25I CA25J CA25K CA25L CA25M CA25NR 
+CA25O CA25P CA25Q CA25R CA25W CA25X CA25Z CA27A CA27B CA27D CA27E CA27F CA27H CA27I CA27J CA27K CA27L CA27M CA27NR CA27O CA27P 
+CA27Q CA27R CA27W CA27X CA27Z CA6A CA6B CA6D CA6E CA6F CA6H CA6I CA6J CA6K CA6L CA6M CA6NR CA6O CA6P CA6Q CA6W CA6X CA9A CA9B CA9D 
+CA9E CA9F CA9H CA9I CA9J CA9K CA9L CA9M CA9NR CA9O CA9P CA9Q CA9W CA9X CA9Z EC5AA EC5AB EC5ANR EC5AX EC5AY EC5BA EC5BB EC5BNR EC5BX 
+EC5BY EC5CA EC5CB EC5CNR EC5CX EC5CY EC5DA EC5DB EC5DNR EC5DX EC5DY EC5EA EC5EB EC5ENR EC5EX EC5EY EC5FA EC5FB EC5FNR EC5FX EC5FY;
+MPRINT(MISSING_REPORT):   array char_miss[169] _temporary_;
+MPRINT(MISSING_REPORT):   retain total 0;
+MPRINT(MISSING_REPORT):   if _N_ = 1 then do;
+MPRINT(MISSING_REPORT):   do i = 1 to 273;
+MPRINT(MISSING_REPORT):   num_miss[i] = 0;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   do i = 1 to 169;
+MPRINT(MISSING_REPORT):   char_miss[i] = 0;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   total + 1;
+MPRINT(MISSING_REPORT):   do i = 1 to dim(num_vars);
+MPRINT(MISSING_REPORT):   if missing(num_vars[i]) then num_miss[i] + 1;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   do i = 1 to dim(char_vars);
+MPRINT(MISSING_REPORT):   if missing(char_vars[i]) then char_miss[i] + 1;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   if last then do;
+MPRINT(MISSING_REPORT):   do i = 1 to 273;
+NOTE: The quoted string currently being processed has become more than 262 characters long.  You might have unbalanced quotation 
+      marks.
+MPRINT(MISSING_REPORT):   varname = scan("AN1 AN2 AN3 AN4 AN5 AN6 AN7 AN8 AN9 AN11 AN12 AN13D AN13M AN13Y BD2 BD3 BD4 BD5 BD6 BD9 
+BD7A BD7B BD7C BD7D BD7D1 BD7E BD7E1 BD7X BD8A BD8A1 BD8B BD8C BD8D BD8E BD8F BD8G BD8H BD8I BD8J BD8K BD8L BD8M BD8N BD8X BMI 
+BMIFLAG BR1 BR2 BR3 CA1 CA3 CA4 CA5 CA12 CA14 CA15 CA16 CA17 CA18 CA20 CA22 CA29 CA31 CA1A CA7A CA7B CA7C CA7D CAGE CAGED CAGE_6 
+CAGE_11 CDOB CDOI CINSURANCE EC1 EC6 EC7 EC8 EC9 EC10 EC11 EC12 EC13 EC14 EC15 EC2A EC2B EC2C EC3A EC3B ED5A ED5B FLAG HAM HAP HAZ 
+HAZ2 HAZFLAG HH1 HH2 HH4 HH6 HH7 HH7_A HH7_B HH7_C HL4 HM1 HM2 HM3 HM4 HM5 HM6 HM7 HM8 HM10 HM11 HM7A IM2 IM3 IM5 IM9 IM11 IM14 
+IM15 IM16 IM18 IM20 IM21 IM22 IM23 IM24 IM25 IM26 IM29 IM26A IM6BD IM6BM IM6BY IM6DPT1D IM6DPT1M IM6DPT1Y IM6H0D IM6H0M IM6H0Y 
+4                                                          The SAS System                              15:02 Wednesday, June 4, 2025
+
+IM6M1D IM6M1M IM6M1Y IM6M2D IM6M2M IM6M2Y IM6P1D IM6P1M IM6P1Y IM6P2D IM6P2M IM6P2Y IM6P3D IM6P3M IM6P3Y IM6P4D IM6P4M IM6P4Y 
+IM6PCV1D IM6PCV1M IM6PCV1Y IM6PCV2D IM6PCV2M IM6PCV2Y IM6PCV3D IM6PCV3M IM6PCV3Y IM6PENTA1D IM6PENTA1M IM6PENTA1Y IM6PENTA2D 
+IM6PENTA2M IM6PENTA2Y IM6PENTA3D IM6PENTA3M IM6PENTA3Y IM6R1D IM6R1M IM6R1Y IM6R2D IM6R2M IM6R2Y LN PSU UB2 UB6 UB7 UB8 UB1D UB1M 
+UB1Y UCD4 UCD5 UCD2A UCD2B UCD2C UCD2D UCD2E UCD2F UCD2G UCD2H UCD2I UCD2J UCD2K UCF2 UCF3 UCF4 UCF7 UCF9 UCF11 UCF12 UCF13 UCF14 
+UCF15 UCF16 UCF17 UCF18 UCF19 UF1 UF2 UF3 UF4 UF5 UF6 UF9 UF10 UF12 UF13 UF14 UF15 UF17 UF11H UF11M UF7D UF7M UF7Y UF8H UF8M UFHINT 
+UFINT WAM WAP WAZ WAZ2 WAZFLAG WHM WHP WHZ WHZ2 WHZFLAG WHZNOAGE ZBMI caretakerdis cdisability chweight ethnicity melevel stratum 
+windex5 windex10 windex10r windex10u windex5r windex5u wscore wscorer wscoreu", i);
+MPRINT(MISSING_REPORT):   miss_pct = (num_miss[i] / total) * 100;
+MPRINT(MISSING_REPORT):   if miss_pct = . then miss_pct = 0;
+MPRINT(MISSING_REPORT):   output;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   do i = 1 to 169;
+NOTE: The quoted string currently being processed has become more than 262 characters long.  You might have unbalanced quotation 
+      marks.
+MPRINT(MISSING_REPORT):   varname = scan("AE5C AE5D AE5E AE5X CA11A CA11B CA11D CA11E CA11F CA11H CA11I CA11J CA11K CA11L CA11M 
+CA11NR CA11O CA11P CA11Q CA11R CA11W CA11X CA11Z CA13A CA13B CA13G CA13H CA13L CA13M CA13N CA13NR CA13O CA13Q CA13X CA21A CA21B 
+CA21D CA21E CA21F CA21H CA21I CA21J CA21K CA21L CA21M CA21NR CA21O CA21P CA21Q CA21R CA21W CA21X CA23C CA23I CA23K CA23L CA23M 
+CA23N CA23NR CA23O CA23R CA23S CA23T CA23W CA23X CA23Z CA25A CA25B CA25D CA25E CA25F CA25H CA25I CA25J CA25K CA25L CA25M CA25NR 
+CA25O CA25P CA25Q CA25R CA25W CA25X CA25Z CA27A CA27B CA27D CA27E CA27F CA27H CA27I CA27J CA27K CA27L CA27M CA27NR CA27O CA27P 
+CA27Q CA27R CA27W CA27X CA27Z CA6A CA6B CA6D CA6E CA6F CA6H CA6I CA6J CA6K CA6L CA6M CA6NR CA6O CA6P CA6Q CA6W CA6X CA9A CA9B CA9D 
+CA9E CA9F CA9H CA9I CA9J CA9K CA9L CA9M CA9NR CA9O CA9P CA9Q CA9W CA9X CA9Z EC5AA EC5AB EC5ANR EC5AX EC5AY EC5BA EC5BB EC5BNR EC5BX 
+EC5BY EC5CA EC5CB EC5CNR EC5CX EC5CY EC5DA EC5DB EC5DNR EC5DX EC5DY EC5EA EC5EB EC5ENR EC5EX EC5EY EC5FA EC5FB EC5FNR EC5FX EC5FY", 
+i);
+MPRINT(MISSING_REPORT):   miss_pct = (char_miss[i] / total) * 100;
+MPRINT(MISSING_REPORT):   if miss_pct = . then miss_pct = 0;
+MPRINT(MISSING_REPORT):   output;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   keep varname miss_pct;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 8713 observations read from the data set WORK.DT.
+NOTE: The data set WORK.MISSING_REPORT has 442 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.11 seconds
+      cpu time            0.07 seconds
+      
+
+MPRINT(MISSING_REPORT):   proc sql;
+MPRINT(MISSING_REPORT):   create table final_report_unsorted as select a.varname, b.label, a.miss_pct from missing_report a left 
+join varinfo_filtered b on upcase(a.varname) = upcase(b.name);
+NOTE: Table WORK.FINAL_REPORT_UNSORTED created, with 442 rows and 3 columns.
+
+MPRINT(MISSING_REPORT):   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(MISSING_REPORT):   proc sort data=final_report_unsorted out=final_report;
+MPRINT(MISSING_REPORT):   by miss_pct;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 442 observations read from the data set WORK.FINAL_REPORT_UNSORTED.
+NOTE: The data set WORK.FINAL_REPORT has 442 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.00 seconds
+5                                                          The SAS System                              15:02 Wednesday, June 4, 2025
+
+      
+
+MPRINT(MISSING_REPORT):   ods rtf 
+file="J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008/scripts/lhs000899//lhs00089902_children_recode_missing.rtf.rtf" style=journal;
+NOTE: Writing RTF Body file: 
+      J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008/scripts/lhs000899//lhs00089902_children_recode_missing.rtf.rtf
+MPRINT(MISSING_REPORT):   proc print data=final_report noobs label;
+MPRINT(MISSING_REPORT):   title "Missing Data Report (Sorted by Percent Missing)";
+MPRINT(MISSING_REPORT):   var varname label miss_pct;
+MPRINT(MISSING_REPORT):   label varname = "Variable Name" label = "Variable Label" miss_pct = "Percent Missing";
+MPRINT(MISSING_REPORT):   format miss_pct 6.2;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 442 observations read from the data set WORK.FINAL_REPORT.
+NOTE: The PROCEDURE PRINT printed pages 1-9.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.04 seconds
+      
+
+MPRINT(MISSING_REPORT):   ods rtf close;
+166        
+167        * births;
+168         %missing_report(data = raw.births,
+169                            outpath = &homepath./scripts/&job./,
+170                            outname = &subjob._births_missing.rtf);
+MPRINT(MISSING_REPORT):   data dt;
+MPRINT(MISSING_REPORT):   set raw.births;
+MPRINT(MISSING_REPORT):   format _all_;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 38847 observations read from the data set RAW.BIRTHS.
+NOTE: The data set WORK.DT has 38847 observations and 52 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(MISSING_REPORT):   proc contents data=dt out=varinfo(keep=name label type) noprint;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: The data set WORK.VARINFO has 52 observations and 3 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(MISSING_REPORT):   data varinfo_filtered;
+MPRINT(MISSING_REPORT):   set varinfo;
+MPRINT(MISSING_REPORT):   *if index(upcase(label), 'NA -') = 0;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 52 observations read from the data set WORK.VARINFO.
+NOTE: The data set WORK.VARINFO_FILTERED has 52 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+6                                                          The SAS System                              15:02 Wednesday, June 4, 2025
+
+
+MPRINT(MISSING_REPORT):   proc sql noprint;
+MPRINT(MISSING_REPORT):   select name into :num_vars separated by ' ' from varinfo_filtered where type = 1;
+MPRINT(MISSING_REPORT):   select name into :char_vars separated by ' ' from varinfo_filtered where type = 2;
+NOTE: No rows were selected.
+MPRINT(MISSING_REPORT):   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(MISSING_REPORT):   data missing_report;
+MPRINT(MISSING_REPORT):   set dt end=last;
+MPRINT(MISSING_REPORT):   array num_vars {*} BH0 BH2 BH3 BH5 BH6 BH7 BH8 BH10 BH4C BH4D BH4F BH4M BH4Y BH9C BH9F BH9N BH9U BHLN HH1 
+HH2 HH4 HH6 HH7 HH7_A HH7_B HH7_C LN PSU WDOB WDOI WM1 WM2 WM3 WMINT birthint brthord disability ethnicity insurance magebrt 
+stratum welevel windex5 windex10 windex10r windex10u windex5r windex5u wmweight wscore wscorer wscoreu;
+MPRINT(MISSING_REPORT):   array num_miss[52] _temporary_;
+MPRINT(MISSING_REPORT):   retain total 0;
+MPRINT(MISSING_REPORT):   if _N_ = 1 then do;
+MPRINT(MISSING_REPORT):   do i = 1 to 52;
+MPRINT(MISSING_REPORT):   num_miss[i] = 0;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   total + 1;
+MPRINT(MISSING_REPORT):   do i = 1 to dim(num_vars);
+MPRINT(MISSING_REPORT):   if missing(num_vars[i]) then num_miss[i] + 1;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   if last then do;
+MPRINT(MISSING_REPORT):   do i = 1 to 52;
+NOTE: The quoted string currently being processed has become more than 262 characters long.  You might have unbalanced quotation 
+      marks.
+MPRINT(MISSING_REPORT):   varname = scan("BH0 BH2 BH3 BH5 BH6 BH7 BH8 BH10 BH4C BH4D BH4F BH4M BH4Y BH9C BH9F BH9N BH9U BHLN HH1 
+HH2 HH4 HH6 HH7 HH7_A HH7_B HH7_C LN PSU WDOB WDOI WM1 WM2 WM3 WMINT birthint brthord disability ethnicity insurance magebrt 
+stratum welevel windex5 windex10 windex10r windex10u windex5r windex5u wmweight wscore wscorer wscoreu", i);
+MPRINT(MISSING_REPORT):   miss_pct = (num_miss[i] / total) * 100;
+MPRINT(MISSING_REPORT):   if miss_pct = . then miss_pct = 0;
+MPRINT(MISSING_REPORT):   output;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   end;
+MPRINT(MISSING_REPORT):   keep varname miss_pct;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 38847 observations read from the data set WORK.DT.
+NOTE: The data set WORK.MISSING_REPORT has 52 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(MISSING_REPORT):   proc sql;
+MPRINT(MISSING_REPORT):   create table final_report_unsorted as select a.varname, b.label, a.miss_pct from missing_report a left 
+join varinfo_filtered b on upcase(a.varname) = upcase(b.name);
+NOTE: Table WORK.FINAL_REPORT_UNSORTED created, with 52 rows and 3 columns.
+
+MPRINT(MISSING_REPORT):   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+7                                                          The SAS System                              15:02 Wednesday, June 4, 2025
+
+      
+
+MPRINT(MISSING_REPORT):   proc sort data=final_report_unsorted out=final_report;
+MPRINT(MISSING_REPORT):   by miss_pct;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 52 observations read from the data set WORK.FINAL_REPORT_UNSORTED.
+NOTE: The data set WORK.FINAL_REPORT has 52 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(MISSING_REPORT):   ods rtf 
+file="J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008/scripts/lhs000899//lhs00089902_births_missing.rtf.rtf" style=journal;
+NOTE: Writing RTF Body file: J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008/scripts/lhs000899//lhs00089902_births_missing.rtf.rtf
+MPRINT(MISSING_REPORT):   proc print data=final_report noobs label;
+MPRINT(MISSING_REPORT):   title "Missing Data Report (Sorted by Percent Missing)";
+MPRINT(MISSING_REPORT):   var varname label miss_pct;
+MPRINT(MISSING_REPORT):   label varname = "Variable Name" label = "Variable Label" miss_pct = "Percent Missing";
+MPRINT(MISSING_REPORT):   format miss_pct 6.2;
+MPRINT(MISSING_REPORT):   run;
+
+NOTE: There were 52 observations read from the data set WORK.FINAL_REPORT.
+NOTE: The PROCEDURE PRINT printed page 10.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(MISSING_REPORT):   ods rtf close;
+171        
+172        
+173        proc printto; run;
+
