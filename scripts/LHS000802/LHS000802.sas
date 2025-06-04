@@ -23,6 +23,9 @@ options mprint;
 libname raw "&homepath./data/raw";
 libname derv "&homepath./data/derived";
 
+* include file;
+%include "&homepath./scripts/LHS000890/LHS000890.sas";
+
 * Derived dataset;
 data derv.&job._&sysdate.;
 	set raw.births;
@@ -38,7 +41,7 @@ data derv.&job._&sysdate.;
 	alive = (bh5=1);
 	label alive = "Child is live";
 
-	child_sex = bh3;
+	child_sex = (bh3 = 1);
 	label child_sex = "Child's sex"; 
 
 	
@@ -48,8 +51,8 @@ proc surveyfreq data = derv.&job._&sysdate.;
 	cluster psu;
 	strata strata;
 	weight wmweight;
-
-	table alive child_sex;
+	table alive * child_sex  / chisq;
+	format child_sex child_sex_fmt.;
 run;
 
 proc printto; run;
