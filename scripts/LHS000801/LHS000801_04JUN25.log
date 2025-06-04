@@ -1,0 +1,54 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+19         
+20         * load libraries;
+21         libname raw "&homepath./data/raw";
+NOTE: Libref RAW was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008\\data\raw
+22         
+23         * import the spss data file;
+24         %macro import_sav(db_in=, db_out=);
+25         	proc import
+26         	  out= raw.&db_out.
+2                                                          The SAS System                              13:56 Wednesday, June 4, 2025
+
+27         	  datafile="&homepath./data/raw/&db_in..sav"
+28         	  dbms=sav
+29         	  replace;
+30         	run;
+31         %mend import_sav;
+32         
+33         * run the macro to import and save the sav files;
+34         %import_sav(db_in=ch, db_out=children);
+MPRINT(IMPORT_SAV):   proc import out= raw.children datafile="J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008\/data/raw/ch.sav" 
+dbms=sav replace;
+MPRINT(IMPORT_SAV):   ASAV;
+MPRINT(IMPORT_SAV):   run;
+
+NOTE: The import data set has 8713 observations and 442 variables.
+NOTE: RAW.CHILDREN data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           1.75 seconds
+      cpu time            0.43 seconds
+      
+
+35         %import_sav(db_in=bh, db_out=births);
+MPRINT(IMPORT_SAV):   proc import out= raw.births datafile="J:\HCHS\STATISTICS\GRAS\QAngarita\LHS\LHS0008\/data/raw/bh.sav" 
+dbms=sav replace;
+MPRINT(IMPORT_SAV):   ASAV;
+MPRINT(IMPORT_SAV):   run;
+
+NOTE: The import data set has 38847 observations and 52 variables.
+NOTE: RAW.BIRTHS data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.45 seconds
+      cpu time            0.09 seconds
+      
+
+36         
+37         proc printto; run;
+
