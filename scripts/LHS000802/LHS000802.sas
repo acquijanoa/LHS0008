@@ -32,7 +32,7 @@ data derv.&job._&sysdate.;
 	format _all_;
 
 	* keep the variables;
-	keep psu stratum wmweight alive child_sex ethnicity;
+	keep psu stratum wmweight alive child_sex ethnicity urban hh7 birthint magebrt;
 
 	* rename variables;
 	rename stratum = strata;
@@ -41,18 +41,30 @@ data derv.&job._&sysdate.;
 	alive = (bh5=1);
 	label alive = "Child is live";
 
+	* child_sex;
 	child_sex = (bh3 = 1);
 	label child_sex = "Child's sex"; 
 
-	label ethnicity = "Ethnicity"
+	* urban ;
+	urban = (hh6 = 1);
+	label urban = "Urban area";
+
+	* region;
+	rename hh7 = region;
+	label hh7 = 'Region of residence';
+
+	* Set labels;
+	label ethnicity = "Ethnicity";
 run;
 
 proc surveyfreq data = derv.&job._&sysdate.;
 	cluster psu;
 	strata strata;
 	weight wmweight;
-	table alive * child_sex alive * ethnicity / chisq;
-	format child_sex child_sex_fmt.;
+	table alive * child_sex alive * ethnicity alive * urban alive * region alive * magebrt / chisq col;
+	format child_sex child_sex_fmt. alive alive_fmt. ethnicity ethnicity_fmt. 
+			urban urban_fmt. region region_fmt. magebrt magebrt_fmt. ;
 run;
+
 
 proc printto; run;
